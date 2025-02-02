@@ -1,1 +1,85 @@
+.headerlogo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 850px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .logo{
+
+        padding: 20px;
+    }
+
+
+        .thumbnail span{ /*CSS for enlarged image*/
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        background-color: lightyellow;
+        padding: 5px;
+        border: 1px dashed gray;
+        visibility: hidden;
+        color: black;
+        }
+        
+        .thumbnail img { /*CSS for min image*/
+        border-width: 4px;
+        padding: 0px;
+        }
+        
+        .back {
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        background-color: lightyellow;
+        padding: none;
+        border: none;
+        visibility: visible;
+        color: black;  
+        z-index: -1; 
+        }
+
+        .thumbnail:hover img{ /*CSS for min image on hover*/
+            padding: 10px;
+        }   
+        .thumbnail:hover span{ /*CSS for enlarged image on hover*/     
+        visibility: visible;
+          
+        }
+        .general--design{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .general--design{
+            flex-wrap: wrap-reverse;
+           }
+
+           @media screen and (min-width: 844px){
+            .general--design{
+                flex-wrap: wrap-reverse;
+               }
+               
+                .gallery{
+                    display: inline-block;
+                    flex-direction: column;
+                    height: 300px;
+                    object-fit: cover;
+                    overflow:auto;
+                    padding: 5px;
+               }
+               .general--image{
+                margin-left: 80px;
+                
+               }
+               .body{
+                height: 390px;
+               }
+            }
+            .detailed--image {
+                visibility: hidden;   
+            }
 
