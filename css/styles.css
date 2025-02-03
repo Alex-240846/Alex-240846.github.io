@@ -1,4 +1,6 @@
- .headerlogo{
+
+   
+       .headerlogo{
         display: flex;
         justify-content: center;
     }
@@ -14,7 +16,7 @@
     }
 
 
-        .thumbnail span{ /*CSS for enlarged image*/
+        .thumbnail span{ 
         position: absolute;
         top: 150px;
         left: 250px;
@@ -25,7 +27,7 @@
         color: black;
         }
         
-        .thumbnail img { /*CSS for min image*/
+        .thumbnail img { 
         border-width: 4px;
         padding: 0px;
         }
@@ -42,13 +44,13 @@
         z-index: -1; 
         }
 
-        .thumbnail:hover img{ /*CSS for min image on hover*/
+        .thumbnail:hover img{ 
             padding: 10px;
         }   
-        .thumbnail:hover span{ /*CSS for enlarged image on hover*/     
+        .thumbnail:hover span{    
         visibility: visible;
           
-        }
+        }*/
         .general--design{
             display: flex;
             flex-direction: row;
@@ -64,7 +66,7 @@
                }
                
                 .gallery{
-                    display: inline-block;
+                    display: flex;
                     flex-direction: column;
                     height: 300px;
                     object-fit: cover;
@@ -73,7 +75,7 @@
                }
                .general--image{
                 margin-left: 80px;
-                
+                visibility: hidden;
                }
                .body{
                 height: 390px;
@@ -82,3 +84,4 @@
             .detailed--image {
                 visibility: hidden;   
             }
+
